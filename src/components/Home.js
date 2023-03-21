@@ -29,6 +29,7 @@ const Home = (props) => {
 const Container = styled.div`
   padding-top: 52px;
   max-width: 100%;
+  // overflow-y: scroll;
 `
 
 const Content = styled.div`
@@ -48,9 +49,9 @@ const Section = styled.section`
   h5{
     color: #0a66c2;
     font-size: 14px;
-  }
-  a{
-    font-weight: 700;
+    a{
+      font-weight: 700;
+     }
   }
   p{
     font-size: 14px;
