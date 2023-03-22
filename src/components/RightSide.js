@@ -58,7 +58,7 @@ const FollowCard = styled.div`
   padding: 12px;
 
   @media(max-width: 768px){
-    margin-bottom: 48px;
+    margin-bottom: 4git8px;
   }
 `;
 
