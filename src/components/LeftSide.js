@@ -195,7 +195,8 @@ a{
 
   span{
     display: flex;
-    align-items: center;justify-conten: space-between;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &:last-child{
