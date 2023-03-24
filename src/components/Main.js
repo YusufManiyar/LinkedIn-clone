@@ -54,8 +54,8 @@ const Main = props => {
           <SocialCounts>
             <li>
               <button>
-                <img src="images/like-icon.png" alt="" />
-                <img src="images/clap-icon.png" alt="" />
+                <img src="images/like-icon.svg" alt="" />
+                <img src="images/clap-icon.svg" alt="" />
                 <span>62</span>
               </button>
             </li>
@@ -65,9 +65,24 @@ const Main = props => {
               </a>
             </li>
           </SocialCounts>
+          <SocialAction>
           <button>
-            <img src='/images/like-icon.svg' alt='' />
+            <img src='/images/like1/.svg' alt='' />
+            <span>Like</span>
           </button>
+          <button>
+            <img src='/images/comment-icon/.png' alt='' />
+            <span>Comment</span>
+          </button>
+          <button>
+            <img src='/images/share -icon/.svg' alt='' />
+            <span>Share</span>
+          </button>
+          <button>
+            <img src='/images/send-icon/.svg' alt='' />
+            <span>Send</span>
+          </button>
+          </SocialAction>
         </Article>
       </div>
     </Container>
@@ -241,5 +256,28 @@ const SocialCounts = styled.ul`
         width: 18px;
     }
 `;
+
+const SocialAction = styled.div`
+align-items: center;
+display: flex;
+justify-content: flex-start;
+margin: 0;
+min-height: 40px;
+padding: 4px 8px;
+button{
+  display: inline-flex;
+  align-items: center;
+  padding: 8px;
+  color: #0a66c2;
+
+  media(min-width: 786px){
+    span{
+      margin-left: 8px;
+    }
+  }
+}
+
+`;
+
 
 export default Main
