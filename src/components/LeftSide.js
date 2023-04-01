@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import styled from 'styled-components'
 
 const LeftSide = props => {
@@ -10,7 +11,7 @@ const LeftSide = props => {
             <a>
               <Photo />
               <Link>
-               Welcome,there!
+               Welcome, {props.user ? props.user.displayName : "there"}!
               </Link>
             </a>
             <a>
@@ -212,4 +213,11 @@ a{
 }
 `;
 
-export default LeftSide
+const mapStateToProps = (state) => {
+  return {
+    user: state.userState.user
+  }
+
+}
+
+export default connect(mapStateToProps)(LeftSide)
